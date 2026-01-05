@@ -1,38 +1,33 @@
-# project-ops-dashboard
+# 虛構讀書社交平台「悅讀」會員頁面
 
-This template should help get you started developing with Vue 3 in Vite.
+## 使用框架與套件
+### 框架
 
-## Recommended IDE Setup
+- Vue.js
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### 套件
 
-## Recommended Browser Setup
+- Vue Router
+- Chart.js
+- Bootstrap Icons
+- DaysiUI
+- TailwindCSS
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 網站地圖
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+- 總覽
+  - 視覺化統計資料
+- 新增紀錄
+  - 文章編輯
+- 個人資訊
+  - 會員資料編輯
+  - 3D 個人卡片預覽
+- 社群
+- 隱私權與安全性
+  - 隱私權設定
+    - Switch / Select
+    - 社群帳號連結
+  - 更新密碼
+    - 含表單驗證
+  - 封存 / 刪除帳號
+    - Modal
