@@ -72,11 +72,11 @@
 
           <!-- 檢視原始碼 -->
           <li>
-            <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="檢視原始碼">
+            <a href="https://github.com/YauNai/user-dashboard" target="_blank" class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="檢視原始碼">
               <i class="bi bi-github my-1.5 inline-block"></i>
               <span class="is-drawer-close:hidden">檢視原始碼</span>
               <i class="bi bi-box-arrow-up-right is-drawer-close:hidden"></i>
-            </button>
+            </a>
           </li>
 
           <!-- 登出 -->

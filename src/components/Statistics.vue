@@ -1,4 +1,20 @@
 <template>
+  <div class="flex justify-center">
+    <div class="stats shadow mb-8">
+      <div class="stat place-items-center">
+        <div class="stat-title">累計閱讀</div>
+        <div class="stat-value text-accent">{{ readedSum }} 本書</div>
+        <div class="stat-desc">從 2025 年 1 月至今</div>
+      </div>
+
+      <div class="stat place-items-center">
+        <div class="stat-title">收到讚數</div>
+        <div class="stat-value text-accent">{{ likeSum }}</div>
+        <div class="stat-desc">從 2025 年 1 月至今</div>
+      </div>
+    </div>
+  </div>
+
   <div class="mb-8">
     <h1 class="text-2xl text-center font-bold mb-4">累計閱讀</h1>
     <div class="w-full h-96">
@@ -29,8 +45,9 @@
 
   const totalReaded = {
     months: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
-    count: [12, 23, 31, 50, 55, 68, 82, 89, 98, 115, 125, 143]
+    count: [12, 23, 31, 50, 55, 68, 82, 89, 98, 115, 125, 143],
   }
+  const readedSum = totalReaded.count.pop()
 
   const genresCount = {
     genres: ['奇幻', '科幻', '推理', '科普', '哲學', '其他'],
@@ -41,6 +58,9 @@
     type: ['書評', '寫作', '繪畫', '遊記', '市集'],
     likes: [128, 179, 192, 264, 163]
   }
+  const likeSum = receivedLikes.likes.reduce((acc, curr) => {
+    return acc + curr
+  }, 0)
 </script>
 
 <style lang="scss" scoped></style>

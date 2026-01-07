@@ -1,4 +1,5 @@
 <script setup>
+import RecentActivity from '@/components/RecentActivity.vue';
 import Statistics from '@/components/Statistics.vue';
 
 </script>
@@ -12,8 +13,10 @@ import Statistics from '@/components/Statistics.vue';
       <Statistics />
     </div>
 
-    <input type="radio" name="home_tabs" class="tab" aria-label="近期活動" />
-    <div class="tab-content bg-base-100 border-base-300 p-6">Tab content 2</div>
+    <input type="radio" name="home_tabs" class="tab" aria-label="近期動態" />
+    <div class="tab-content bg-base-100 border-base-300 p-6">
+      <RecentActivity />
+    </div>
 
     <input type="radio" name="home_tabs" class="tab" aria-label="Tab 3" />
     <div class="tab-content bg-base-100 border-base-300 p-6">Tab content 3</div>
