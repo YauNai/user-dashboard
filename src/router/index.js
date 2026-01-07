@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import ProfilesView from '@/views/ProfilesView.vue'
 import SafetyAndPrivacyView from '@/views/SafetyAndPrivacyView.vue'
 import CreateView from '@/views/CreateView.vue'
+import Community from '@/views/Community.vue'
 
 const mainTitle = '悅讀'
 
@@ -34,6 +35,14 @@ const router = createRouter({
       }
     },
     {
+      path: '/community',
+      name: 'community',
+      component: Community,
+      meta: {
+        title: '社群'
+      }
+    },
+    {
       path: '/safety-and-privacy',
       name: 'safety-and-privacy',
       component: SafetyAndPrivacyView,
@@ -45,7 +54,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = `${mainTitle} - ${to.meta.title}`
+  document.title = `${to.meta.title} - ${mainTitle}`
   next()
 })
 

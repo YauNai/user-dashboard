@@ -54,10 +54,10 @@
           
           <!-- 社群 -->
           <li>
-            <button @click="setNavTitle('社群')" class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="社群">
+            <RouterLink to="/community" @click="setNavTitle('社群')" class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="社群">
               <i class="bi bi-people my-1.5 inline-block"></i>
               <span class="is-drawer-close:hidden">社群</span>
-            </button>
+            </RouterLink>
           </li>
 
           <!-- 隱私權 -->
