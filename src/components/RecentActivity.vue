@@ -31,9 +31,9 @@
 </template>
 
 <script setup>
-  import image01 from '../assets/images/activitys/feed_01.jpg'
-  import image02 from '../assets/images/activitys/feed_02.jpg'
-  import imageBilbo from '../assets/images/activitys/feed_bilbo.jpg'
+  import image01 from '../assets/images/activities/feed_01.jpg'
+  import image02 from '../assets/images/activities/feed_02.jpg'
+  import imageBilbo from '../assets/images/activities/feed_bilbo.jpg'
 
   const data = [
     {
